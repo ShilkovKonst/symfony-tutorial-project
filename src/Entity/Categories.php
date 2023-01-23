@@ -64,7 +64,7 @@ use SlugTrait;
 
     public function setCategoryOrder(int $categoryOrder): self
     {
-        $this->name = $categoryOrder;
+        $this->categoryOrder = $categoryOrder;
 
         return $this;
     }
