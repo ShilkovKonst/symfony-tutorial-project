@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminUserController!{% endblock %}
+
+{% block body %}
+<main class="container">
+    <section class="row">
+        <div class="col-12">
+            <h1 class="text-center">Liste</h1>
+        </div>
+        <div class="col-4 mb-3">
+            <article class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title"><a href="{{ path('app_admin_users') }}">Liste des utilisateurs</a></h2>
+                </div>
+            </article>
+        </div>
+        <div class="col-4 mb-3">
+            <article class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title"><a href="{{ path('app_admin_categories') }}">Liste des catégories</a></h2>
+                </div>
+            </article>
+        </div>
+        <div class="col-4 mb-3">
+            <article class="card h-100">
+                <div class="card-body">
+                    <h2 class="card-title"><a href="{{ path('app_admin_products') }}">Liste des produits</a></h2>
+                </div>
+            </article>
+        </div>
+</main>
+{% endblock %}

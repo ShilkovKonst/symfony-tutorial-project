@@ -6,16 +6,14 @@
 <main class="container">
     <section class="row">
         <div class="col-12">
-            <h1>Liste des utilisateurs</h1>
+            <h1>Liste des produits</h1>
         </div>
-        {% for user in users %}
+        {% for product in products %}
         <div class="col-12 mb-3">
             <article class="card h-100">
                 <div class="card-body">
-                    <h2 class="card-title">{{ user.lastname }} {{ user.firstname }}</h2>
-                    <p class="card-text">{{ user.email }}</p>
-                    {# <p class="card-text">{{ user.createdAt }}</p> #}
-
+                    <h2 class="card-title">{{ product.name }}</h2>
+                    <p class="card-text">{{ product.description }}</p>                    
                 </div>
             </article>
         </div>

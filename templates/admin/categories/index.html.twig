@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello AdminUserController!
+{% endblock %}
+
+{% block body %}
+	<main class="container">
+		<section class="row">
+			<div class="col-12">
+				<h1>Liste des categories</h1>
+			</div>
+			{% for category in categories %}
+				<div class="col-12 mb-3">
+					<article class="card h-100">
+						<div class="card-body">
+							{% if category.parent == null %}
+								<h2 class="card-title">{{ category.name }}</h2>
+							{% else %}
+								<p class="card-text ps-5">{{ category.name }}</p>
+							{% endif %}
+						</div>
+					</article>
+				</div>
+			{% endfor %}
+		</main>
+	{% endblock %}
