@@ -24,7 +24,7 @@ class UsersFixtures extends Fixture
         $admin->setZipcode('00000');
         $admin->setCity('CITY');
         $admin->setPassword($this->passwordEncoder->hashPassword($admin, 'admin'));
-        $admin->setRoles(['ADMIN']);
+        $admin->setRoles(['ROLE_ADMIN']);
         $manager->persist($admin);
 
         $faker = Factory::create('fr_FR');

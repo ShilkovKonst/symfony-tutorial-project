@@ -9,7 +9,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-#[Route('/admin', name: 'app_admin_')]
+#[Route('/admin1', name: 'app_admin1_')]
 class AdminController extends AbstractController
 {
     #[Route('/', name: 'index')]
